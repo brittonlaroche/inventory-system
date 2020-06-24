@@ -2,6 +2,7 @@
 <resources>
     <!-- Grays -->
     <color name="charcoal">#1C233F</color>
+    <color name="slate_blue">#59569E</color>
     <color name="elephant">#9A9BA5</color>
     <color name="elephant_half">#b1b3bf</color>
     <color name="dove">#EBEBF2</color>
@@ -15,6 +16,8 @@
     <color name="sexy_salmon">#F77C88</color>
     <color name="peach">#FC9F95</color>
     <color name="melon">#FCC397</color>
+    <color name="light_green">#30cb00</color>
+    <color name="leaf_green">#0f9200</color>
 
     <!-- Material adjustments -->
     <color name="flamingo_darker">#d64881</color>
