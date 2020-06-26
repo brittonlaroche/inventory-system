@@ -94,11 +94,12 @@ class InventoryActivity : AppCompatActivity() {
             val nameInput: EditText = dialogInputs.findViewById(R.id.name)
             val quantityInput: EditText = dialogInputs.findViewById(R.id.quantity)
             val priceInput: EditText = dialogInputs.findViewById(R.id.price)
+
             dialogBuilder.setMessage("Enter item details:")
                 .setCancelable(true)
                 .setPositiveButton("Create") { dialog, _ -> run {
                     dialog.dismiss()
-                    val newItem = InventoryItem(nameInput.text.toString(), quantityInput.text.toString().toLong(), priceInput.text.toString().toDouble())
+                    val newItem = InventoryItem(nameInput.text.toString(), quantityInput.text.toString().toLong(), priceInput.text.toString().toDouble(), partition)
                     // all realm writes need to occur inside of a transaction
                     realm.executeTransactionAsync { realm ->
                         realm.insert(newItem)
